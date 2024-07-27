@@ -1,0 +1,50 @@
+#---------------------------------------------
+# Endpoints Item de leilão
+### Busca todos os itens de leilão
+GET /itemdeleilao HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+### Cria um item de leilão
+POST /itemdeleilao HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "nome": "Cadeira",
+  "valorMinimo": 100,
+  "leilaoAberto": true
+}
+
+### Atualiza um item de leilão
+PUT /itemdeleilao/2 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "nome": "Cadeira de madeira",
+  "valorMinimo": 100,
+  "leilaoAberto": true
+}
+
+### Registra um lance
+POST /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "valor": 400,
+  "participante": {
+    "id": 1
+  }
+}
+
+#---------------------------------------------
+# Endpoints Participante
+###
+POST /participante HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+
+
