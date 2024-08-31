@@ -1,0 +1,26 @@
+### Retorna todos os itens que foram vendidos sem desconto
+GET http://localhost:8080/api/pedidos/sem-desconto
+Accept: application/json
+
+### Retorna todos os itens que foram vendidos com desconto
+GET http://localhost:8080/api/pedidos/com-desconto
+Accept: application/json
+
+### Retorna todos os itens e ordena o resultado por VALOR_UNIT do maior para o menor
+GET http://localhost:8080/api/pedidos/ordenado-por-valor-unit
+Accept: application/json
+
+### Retorna o produto que mais vendeu em uma mesma NF
+GET http://localhost:8080/api/pedidos/top-produto-nf/{idNf}
+Accept: application/json
+
+
+### Consulta as NF que foram vendidas mais de 10 unidades de pelo menos um produto
+GET http://localhost:8080/api/pedidos/nf-quantidade-maior-que-10
+Accept: application/json
+
+
+### Pesquisa o valor total das NF, onde esse valor seja maior que 500, e ordena do maior para o menor
+GET http://localhost:8080/api/pedidos/nf-valor-maior-que-500
+Accept: application/json
+
